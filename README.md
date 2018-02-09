@@ -1,0 +1,1 @@
+This is a project for following along and learning React from this course: https://www.udemy.com/react-the-complete-guide-incl-redux/learn/v4/content
