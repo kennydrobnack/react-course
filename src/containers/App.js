@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 //import classes from './App.css'
 import People from '../components/People/People'
 import Cockpit from '../components/Cockpit/Cockpit'
+import Aux from '../hoc/Aux'
+import withClass from '../hoc/withClass'
 
 class App extends Component {
 
@@ -63,16 +65,16 @@ class App extends Component {
     }
 
     return (
-      <div>
+      <Aux>
         <Cockpit
           showPeople={this.state.showPeople}
           people={this.state.people}
           clicked={this.togglePeopleHandler}
           />
         {people}
-      </div>
+      </Aux>
     )
   }
 }
 
-export default App
+export default withClass(App, classes.App)
