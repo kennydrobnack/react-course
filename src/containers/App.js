@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-//import classes from './App.css'
+import classes from './App.css'
 import People from '../components/People/People'
 import Cockpit from '../components/Cockpit/Cockpit'
 import Aux from '../hoc/Aux'
